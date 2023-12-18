@@ -1,0 +1,9 @@
+# STATE FILES
+*.tfstate
+*.tfstate.backup
+
+# PATH
+.terraform/
+
+# SSH KEY
+terraform.pem
