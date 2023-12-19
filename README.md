@@ -29,7 +29,10 @@ terraform apply
 
 ## Conectando-se a instância via SSH
 
-1. Criando chave de acesso
+1. Criando chave de acesso e grupo de segurança
+
+ - Key Pairs: https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#KeyPairs:
+ - Security Group: https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#CreateSecurityGroup:
 
 2. Conectando-se via SSH
    
@@ -68,3 +71,17 @@ sudo yum install -y git make
 ```bash
 sudo docker-compose up -d
 ```
+
+## Configurando Prometheus, Grafana e Alertmanager
+
+1. Conectar Grafana com Prometheus
+![](prints/Screenshot%20from%202023-12-19%2009-12-06.png)
+
+2. Criando nova Dashboard
+![](prints/Screenshot%20from%202023-12-19%2009-06-25.png)
+
+3. Simulando os alertas no Prometheus
+![](prints/Screenshot%20from%202023-12-19%2009-06-05.png)
+
+1. Verificando os alertas no Alertmanager
+![](prints/Screenshot%20from%202023-12-19%2009-05-59.png)
